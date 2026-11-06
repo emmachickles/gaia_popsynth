@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.DS_Store
+# observed Gaia data are fetched locally, not committed
+data/dr3_astrometric_orbits.csv.gz

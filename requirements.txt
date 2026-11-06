@@ -1,0 +1,6 @@
+cosmic-popsynth>=4.3
+numpy
+pandas
+matplotlib
+jupyter
+astroquery

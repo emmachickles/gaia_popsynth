@@ -1,0 +1,11 @@
+{
+  "mass_formed": 403647.25346417574,
+  "n_binaries": 60000,
+  "bse_overrides": {
+    "alpha1": "[1.0, 1.0]"
+  },
+  "tag": "fiducial",
+  "alpha": 1.0,
+  "seed": 11,
+  "runtime_s": 194.3
+}

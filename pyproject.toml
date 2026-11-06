@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaia-popsynth"
+version = "0.1.0"
+description = "Prototype forward model from COSMIC binary population synthesis to the Gaia astrometric orbit catalog (WD+MS binaries, DR3 and DR4)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Emma Chickles" }]
+requires-python = ">=3.10"
+dependencies = ["cosmic-popsynth>=4.3", "numpy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+notebooks = ["jupyter", "ipykernel"]
+data = ["astroquery"]
+
+[tool.setuptools]
+packages = ["popsynth"]
