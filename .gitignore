@@ -7,3 +7,6 @@ dist/
 .DS_Store
 # observed Gaia data are fetched locally, not committed
 data/dr3_astrometric_orbits.csv.gz
+# external code and its scanning-law data (see popsynth/gaiamock_select.py)
+gaiamock/
+gaiamock_data/

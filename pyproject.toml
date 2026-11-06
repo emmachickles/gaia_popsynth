@@ -15,6 +15,7 @@ dependencies = ["cosmic-popsynth>=4.3", "numpy", "pandas", "matplotlib"]
 [project.optional-dependencies]
 notebooks = ["jupyter", "ipykernel"]
 data = ["astroquery"]
+gaiamock = ["healpy", "astropy", "joblib"]
 
 [tool.setuptools]
 packages = ["popsynth"]

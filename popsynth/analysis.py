@@ -27,6 +27,16 @@ def save_population(pop, tag, **meta):
     (DATA / f"pop_{tag}.json").write_text(json.dumps(dict(pop.attrs, tag=tag, **meta), indent=2))
 
 
+def save_final(final, tag):
+    """Every simulated binary's final state (data/final_<tag>.csv.gz)."""
+    DATA.mkdir(exist_ok=True)
+    final.to_csv(DATA / f"final_{tag}.csv.gz")
+
+
+def load_final(tag):
+    return pd.read_csv(DATA / f"final_{tag}.csv.gz", index_col=0)
+
+
 def load_population(tag):
     pop = pd.read_csv(DATA / f"pop_{tag}.csv.gz", index_col=0)
     pop.attrs.update(json.loads((DATA / f"pop_{tag}.json").read_text()))
